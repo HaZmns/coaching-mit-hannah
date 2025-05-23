@@ -11,26 +11,26 @@ const Footer = () => {
         <div className="footer-content">
 
           <div className="footer-section">
-            <h3>{t('nav.coaching')}</h3>
+            <h3><Link to="/coaching">{t('nav.coaching')}</Link></h3>
           </div>
 
           <div className="footer-section">
-            <h3>{t('nav.about')}</h3>
+            <h3><Link to="/about">{t('nav.about')}</Link></h3>
           </div>
 
           <div className="footer-section">
-            <h3>{t('nav.faq')}</h3>
+            <h3><Link to="/faq">{t('nav.faq')}</Link></h3>
           </div>
         
           <div className="footer-section">
-            <h3>{t('nav.prices')}</h3>
+            <h3><Link to="/prices">{t('nav.prices')}</Link></h3>
           </div>
 
           <div className="footer-section">
-            <h3>{t('nav.contact')}</h3>
+            <h3><Link to="/contact">{t('nav.contact')}</Link></h3>
             <p>
-              Email: hannah.ziemons@posteo.de<br />
-              Mobil: +49 15782580405
+              Email: <a href="mailto:hannah.ziemons@posteo.de">hannah.ziemons@posteo.de</a><br />
+              Mobil: <a href="tel:+4915782580405">+49 15782580405</a>
             </p>
           </div>
         </div>
@@ -39,8 +39,8 @@ const Footer = () => {
           <p>{t('footer.copyright')}</p>
           <p>
             <Link to="/impressum">{t('nav.impressum')}</Link> | 
-            <span> {t('footer.privacy_policy')} | </span>
-            <span>{t('footer.terms_of_service')}</span>
+            <Link to="/privacy"> {t('footer.privacy_policy')}</Link> | 
+            <Link to="/terms">{t('footer.terms_of_service')}</Link>
           </p>
         </div>
       </div>
