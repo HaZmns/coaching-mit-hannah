@@ -12,7 +12,7 @@
   --beige-dark: #A6A49D;
   --font-heading: 'Jost', sans-serif;
   --font-body: 'Newsreader', serif;
-  --burger-menu-margin-bottom: 5px; /* New CSS variable for burger menu bottom margin */
+  --burger-menu-margin-bottom: 10px; /* New CSS variable for burger menu bottom margin */
 }
 
 * {
