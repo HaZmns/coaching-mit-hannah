@@ -1,22 +1,8 @@
 import React from 'react';
-import coachingImage from '../assets/coaching-image.JPG';
 
 const CoachingImage = () => {
-  // Use a dynamically constructed URL for the image
-  // This will try 3 common locations where the image might be found
-  const imageSources = [
-    coachingImage,                          // Import the image directly
-    "./images/coaching-image.JPG",          // For standard folder structure with relative path
-    "https://via.placeholder.com/800x400?text=Coaching+with+Hannah" // Fallback
-  ];
-
-  const [currentSourceIndex, setCurrentSourceIndex] = React.useState(0);
-
-  const handleImageError = () => {
-    if (currentSourceIndex < imageSources.length - 1) {
-      setCurrentSourceIndex(currentSourceIndex + 1);
-    }
-  };
+  // Use a placeholder image URL that's definitely accessible
+  const imageSrc = "https://via.placeholder.com/800x400?text=Coaching+mit+Hannah";
 
   // Add specific style for the image container
   const containerStyle = {
@@ -41,9 +27,8 @@ const CoachingImage = () => {
   return (
     <div className="featured-image" style={containerStyle}>
       <img 
-        src={imageSources[currentSourceIndex]} 
-        alt="Coaching with Hannah"
-        onError={handleImageError}
+        src={imageSrc} 
+        alt="Coaching mit Hannah"
         style={imageStyle}
       />
     </div>
