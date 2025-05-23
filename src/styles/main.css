@@ -100,8 +100,8 @@ header {
 .logo {
   text-decoration: none;
   letter-spacing: 1px;
-  margin-top: 5px; /* Reduced top margin */
-  margin-bottom: 5px; /* Already reduced from 15px to 5px */
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
   display: flex;
   flex-direction: column;

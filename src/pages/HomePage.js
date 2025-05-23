@@ -30,7 +30,7 @@ const HomePage = () => {
               minWidth: '200px', 
               maxWidth: '350px', 
               margin: '0 auto',
-              paddingTop: '0'
+              paddingTop: '5px'
             }}>
               <CoachingImage />
             </div>
