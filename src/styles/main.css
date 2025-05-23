@@ -89,7 +89,7 @@ header {
 /* Logo specific styles with strong font-family declaration */
 .logo, .logo * {
   font-family: 'Jost', sans-serif !important; /* Force Jost font with highest priority */
-  font-size: 44px;
+  font-size: 30px; /* Reduced from 44px */
   font-weight: 500;
   color: var(--blue);
   text-transform: uppercase;

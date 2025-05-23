@@ -1,11 +1,12 @@
 import React from 'react';
+import coachingImage from '../assets/coaching-image.JPG';
 
 const CoachingImage = () => {
   // Use a dynamically constructed URL for the image
   // This will try 3 common locations where the image might be found
   const imageSources = [
-    "/images/coaching-image.JPG",            // For standard folder structure
-    "/coaching-image.28d185d7.jpg",          // For Parcel processed image
+    coachingImage,                          // Import the image directly
+    "./images/coaching-image.JPG",          // For standard folder structure with relative path
     "https://via.placeholder.com/800x400?text=Coaching+with+Hannah" // Fallback
   ];
 
