@@ -1,9 +1,7 @@
 import React from 'react';
+import coachingImage from '../assets/images/coaching.png';
 
 const CoachingImage = () => {
-  // For GitHub Pages, we'll use a reliable placeholder service
-  const imageSrc = "https://placehold.co/800x400/CECBC1/062d7f?text=Coaching+mit+Hannah&font=Jost";
-
   // Add specific style for the image container
   const containerStyle = {
     overflow: 'hidden',
@@ -27,7 +25,7 @@ const CoachingImage = () => {
   return (
     <div className="featured-image" style={containerStyle}>
       <img 
-        src={imageSrc} 
+        src={coachingImage} 
         alt="Coaching mit Hannah"
         style={imageStyle}
       />
