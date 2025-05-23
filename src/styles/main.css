@@ -65,7 +65,7 @@ h4, h5, h6 {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 /* Header Styles */
@@ -513,7 +513,7 @@ footer {
   top: 20px;
   z-index: 102;
   margin: 0; /* Reset all margins when open */
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 /* Transforms burger into X when opened - adjusted for 20% smaller size */
