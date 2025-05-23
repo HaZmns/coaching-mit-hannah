@@ -13,7 +13,7 @@ const HomePage = () => {
           <div style={{ 
             display: 'flex', 
             flexWrap: 'wrap', 
-            alignItems: 'center', 
+            alignItems: 'flex-start',
             justifyContent: 'space-between',
             gap: '30px'
           }}>
@@ -25,7 +25,13 @@ const HomePage = () => {
                 {t('home.cta_button')}
               </Link>
             </div>
-            <div style={{ flex: '1', minWidth: '200px', maxWidth: '350px', margin: '0 auto' }}>
+            <div style={{ 
+              flex: '1', 
+              minWidth: '200px', 
+              maxWidth: '350px', 
+              margin: '0 auto',
+              paddingTop: '0'
+            }}>
               <CoachingImage />
             </div>
           </div>
