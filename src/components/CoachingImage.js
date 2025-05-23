@@ -1,16 +1,15 @@
 import React from 'react';
 
 const CoachingImage = () => {
-  // Use the image from the public directory
-  const imageSrc = process.env.NODE_ENV === 'production' 
-    ? './images/coaching.png' // For production (GitHub Pages)
-    : '/images/coaching.png'; // For development
+  // For GitHub Pages, we need to use relative URLs
+  // The base URL will be automatically prepended by the browser
+  const imageSrc = 'images/coaching.png';
 
   // Add specific style for the image container
   const containerStyle = {
     overflow: 'hidden',
     borderRadius: '0',
-    maxHeight: '400px', // Reduced maximum height to fit better in the layout
+    maxHeight: '400px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -19,10 +18,10 @@ const CoachingImage = () => {
 
   // Add specific style for the image itself
   const imageStyle = {
-    objectFit: 'cover', // Ensures the image covers the container nicely
+    objectFit: 'cover',
     width: '100%',
     height: 'auto',
-    maxHeight: '400px', // Match container max height
+    maxHeight: '400px',
     borderRadius: '0'
   };
 
@@ -32,6 +31,10 @@ const CoachingImage = () => {
         src={imageSrc} 
         alt="Coaching mit Hannah"
         style={imageStyle}
+        onError={(e) => {
+          console.error('Image failed to load');
+          e.target.src = 'https://placehold.co/800x400/CECBC1/062d7f?text=Coaching+mit+Hannah&font=Jost';
+        }}
       />
     </div>
   );
