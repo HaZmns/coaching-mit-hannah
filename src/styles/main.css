@@ -12,7 +12,8 @@
   --beige-dark: #A6A49D;
   --font-heading: 'Jost', sans-serif;
   --font-body: 'Newsreader', serif;
-  --burger-menu-margin-bottom: 10px; /* New CSS variable for burger menu bottom margin */
+  --burger-menu-margin-bottom: 10px; /* Burger menu bottom margin */
+  --header-vertical-spacing: 5px; /* New variable for consistent vertical spacing in header */
 }
 
 * {
@@ -85,7 +86,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 0 10px; /* Reduced from 30px to 10px top and bottom */
+  padding: var(--header-vertical-spacing) 0; /* Using the variable for consistent spacing */
   position: relative;
 }
 
@@ -101,8 +102,7 @@ header {
 .logo {
   text-decoration: none;
   letter-spacing: 1px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: var(--header-vertical-spacing) 0; /* Using the variable for consistent spacing */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -427,7 +427,7 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 8px 0 8px; /* Reduced from 12px 0 25px to 8px 0 8px */
+    padding: var(--header-vertical-spacing) 0; /* Using the variable */
   }
   
   .logo, .logo * {
@@ -435,7 +435,7 @@ footer {
   }
   
   .logo {
-    margin-bottom: 4px; /* Reduced spacing below logo on mobile */
+    margin: calc(var(--header-vertical-spacing) / 2) 0; /* Slightly reduced for mobile */
     line-height: 1.1;
   }
 
@@ -472,7 +472,7 @@ footer {
   }
   
   .logo {
-    margin-bottom: 3px; /* Even less space below logo on small mobile */
+    margin: calc(var(--header-vertical-spacing) / 2) 0; /* Reduced for very small screens */
     line-height: 1.05;
   }
   
@@ -481,7 +481,7 @@ footer {
   }
 
   .navbar {
-    padding: 5px 0 5px; /* Further reduced from 10px 0 20px to 5px 0 5px */
+    padding: calc(var(--header-vertical-spacing) / 2) 0; /* Further reduced for very small screens */
   }
 }
 
@@ -494,8 +494,7 @@ footer {
   width: 24px;
   height: 20px;
   padding: 8px;
-  margin: 0 auto;
-  margin-bottom: var(--burger-menu-margin-bottom); /* Using the CSS variable */
+  margin: var(--header-vertical-spacing) auto; /* Using the variable for consistent spacing */
 }
 
 .burger-bar {
