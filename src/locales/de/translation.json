@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "HOME",
+    "coaching": "COACHING",
+    "about": "ÜBER MICH",
+    "faq": "FAQ",
+    "contact": "KONTAKT",
+    "prices": "PREISE",
+    "impressum": "IMPRESSUM"
+  },
+  "home": {
+    "hero_title": "WAS WÄRE WENN?",
+    "hero_subtitle": "Systemisches Coaching mit Hannah",
+    "description": "Das Leben ist voller Überraschungen, Entscheidungen und Herausforderungen und die meisten davon bewältigen wir im Alltag ohne es überhaupt zu bemerken. Ein paar stellen sich dann aber doch als ziemlich hartnäckig heraus und wollen uns einfach nicht aus dem Kopf gehen. Oder wir lösen ein solche Problem scheinbar, merken aber, dass wir mit dem Ergebnis nicht wirklich zufrieden sind. Was wäre, wenn man sich Zeit nehmen würde sie einmal in Ruhe aus ganz anderer Perspektive zu betrachten? Das möchte ich dir im Coaching anbieten. Ganz ohne Ratschläge und Vorannahmen geht es darum, dass du deinen eigenen Weg zur Lösung finden, innere Blockaden verstehen und deinen Handlungsspielraum erweitern kannst. Falls du Lust hast, würde ich dich dabei begleiten, mit Empathie, Tools und ab und ein bisschen Humor.",
+    "cta_button": "ERSTES GESPRÄCH VEREINBAREN"
+  },
+  "coaching": {
+    "hero_title": "COACHING",
+    "hero_subtitle": "Was heißt das eigentlich?",
+    "description": "In meinem systemischen Coaching geht es darum Veränderungen anzustoßen und Menschen in Phasen der Weiterentwicklung zu unterstützen – sei es beruflich, privat oder irgendwo dazwischen. Du musst kein fertiges Ziel haben. Es reicht, wenn du merkst: Ich will, dass sich etwas ändert.",
+    "second_subtitle": "Häufige Coaching-Themen",
+    "topic_list": "Berufliche (Neu-) Orientierung"
+  },
+  "about": {
+    "hero_title": "ÜBER MICH",
+    "description": "Ich bin ein professioneller Coach mit über 10 Jahren Erfahrung darin, Menschen zu helfen, ihre persönlichen und beruflichen Ziele zu erreichen. Mein Ansatz kombiniert bewährte Techniken mit individuellen Strategien, die auf Ihre einzigartige Situation zugeschnitten sind.",
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "question1": "Was ist Coaching?",
+    "answer1": "Coaching ist ein kollaborativer Prozess, der Einzelpersonen hilft, ihre persönlichen und beruflichen Ziele durch angeleitete Selbstentdeckung und umsetzbare Strategien zu identifizieren und zu erreichen.",
+    "question2": "Wie lange dauern Coaching-Sitzungen?",
+    "answer2": "Typische Coaching-Sitzungen dauern 60 Minuten, können aber je nach Ihren Bedürfnissen und Vorlieben angepasst werden.",
+    "question3": "Wie viele Sitzungen werde ich benötigen?",
+    "answer3": "Die Anzahl der Sitzungen variiert je nach Ihren Zielen und Fortschritten. Wir besprechen dies während unserer ersten Beratung.",
+    "question4": "Was ist Ihre Coaching-Methodik?",
+    "answer4": "Meine Coaching-Methodik kombiniert evidenzbasierte Techniken aus der positiven Psychologie, kognitiv-verhaltensorientierten Ansätzen und lösungsorientierten Strategien."
+  },
+  "contact": {
+    "title": "KONTAKT",
+    "description": "Und nun? Falls du noch mehr Fragen hast oder einfach einen unverbindlichen Kennenlern-Termin vereinbaren willst, schreib mir...",
+    "name_label": "Name",
+    "email_label": "E-Mail",
+    "message_label": "Nachricht",
+    "submit_button": "Nachricht senden",
+    "success_message": "Ihre Nachricht wurde erfolgreich gesendet! Ich werde mich in Kürze bei Ihnen melden.",
+    "error_message": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "prices": {
+    "title": "Preise",
+    "description": "Transparente Preise für alle Coaching-Dienstleistungen",
+    "package1_title": "Einzelsitzung",
+    "package1_price": "150 €",
+    "package1_description": "Eine 60-minütige Coaching-Sitzung",
+    "package2_title": "Monatspaket",
+    "package2_price": "500 €",
+    "package2_description": "Vier 60-minütige Sitzungen pro Monat",
+    "package3_title": "Premium-Paket",
+    "package3_price": "1200 €",
+    "package3_description": "12 Sitzungen über 3 Monate plus E-Mail-Support",
+    "note": "Alle Preise sind in Euro. Zahlungspläne sind auf Anfrage verfügbar."
+  },
+  "impressum": {
+    "title": "Impressum",
+    "description": "Rechtliche Informationen über diese Webseite",
+    "responsible_person": "Verantwortliche Person",
+    "address": "Adresse",
+    "contact": "Kontaktinformationen",
+    "register": "Registrierungsinformationen",
+    "disclaimer": "Haftungsausschluss"
+  },
+  "footer": {
+    "copyright": "© 2025 Alle Rechte vorbehalten",
+    "privacy_policy": "Datenschutzerklärung",
+    "terms_of_service": "Nutzungsbedingungen"
+  },
+  "language_switcher": {
+    "en": "EN",
+    "de": "DE"
+  }
+} 

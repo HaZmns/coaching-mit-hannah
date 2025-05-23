@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "coaching": "Coaching",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "prices": "Prices",
+    "impressum": "Impressum"
+  },
+  "home": {
+    "hero_title": "WHAT IF...?",
+    "hero_subtitle": "Systemic Coaching with Hannah",
+    "description": "We solve so many problems, challenges and decision making needs every day. But sometimes we encounter situations that require a closer look - and maybe a fresh perspective. Let's discover it together!",
+    "cta_button": "Book a First Call"
+  },
+  "coaching": {
+    "hero_title": "Coaching",
+    "hero_subtitle": "Was heißt das eigentlich?",
+    "description": "..."
+  },
+  "about": {
+    "hero_title": "About Me",
+    "description": "I am a professional coach with over 10 years of experience helping individuals achieve their personal and professional goals. My approach combines proven techniques with personalized strategies tailored to your unique situation."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "question1": "What is coaching?",
+    "answer1": "Coaching is a collaborative process that helps individuals identify and achieve their personal and professional goals through guided self-discovery and actionable strategies.",
+    "question2": "How long are coaching sessions?",
+    "answer2": "Typical coaching sessions last 60 minutes, but can be adjusted based on your needs and preferences.",
+    "question3": "How many sessions will I need?",
+    "answer3": "The number of sessions varies depending on your goals and progress. We'll discuss this during our initial consultation.",
+    "question4": "What is your coaching methodology?",
+    "answer4": "My coaching methodology combines evidence-based techniques from positive psychology, cognitive-behavioral approaches, and solution-focused strategies."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Get in touch for more information or to schedule a session",
+    "name_label": "Name",
+    "email_label": "Email",
+    "message_label": "Message",
+    "submit_button": "Send Message",
+    "success_message": "Your message has been sent successfully! I'll get back to you soon.",
+    "error_message": "There was an error sending your message. Please try again."
+  },
+  "prices": {
+    "title": "Pricing",
+    "description": "Transparent pricing for all coaching services",
+    "package1_title": "Single Session",
+    "package1_price": "$150",
+    "package1_description": "One 60-minute coaching session",
+    "package2_title": "Monthly Package",
+    "package2_price": "$500",
+    "package2_description": "Four 60-minute sessions per month",
+    "package3_title": "Premium Package",
+    "package3_price": "$1200",
+    "package3_description": "12 sessions over 3 months plus email support",
+    "note": "All prices are in USD. Payment plans available upon request."
+  },
+  "impressum": {
+    "title": "Impressum",
+    "description": "Legal information about this website",
+    "responsible_person": "Responsible Person",
+    "address": "Address",
+    "contact": "Contact Information",
+    "register": "Registration Information",
+    "disclaimer": "Disclaimer"
+  },
+  "footer": {
+    "copyright": "© 2025 All Rights Reserved",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  },
+  "language_switcher": {
+    "en": "EN",
+    "de": "DE"
+  }
+} 
