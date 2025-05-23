@@ -1,7 +1,11 @@
 import React from 'react';
-import coachingImage from '../assets/images/coaching.png';
 
 const CoachingImage = () => {
+  // Use the image from the public directory
+  const imageSrc = process.env.NODE_ENV === 'production' 
+    ? './images/coaching.png' // For production (GitHub Pages)
+    : '/images/coaching.png'; // For development
+
   // Add specific style for the image container
   const containerStyle = {
     overflow: 'hidden',
@@ -25,7 +29,7 @@ const CoachingImage = () => {
   return (
     <div className="featured-image" style={containerStyle}>
       <img 
-        src={coachingImage} 
+        src={imageSrc} 
         alt="Coaching mit Hannah"
         style={imageStyle}
       />
