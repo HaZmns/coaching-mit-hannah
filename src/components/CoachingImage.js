@@ -1,8 +1,8 @@
 import React from 'react';
 
 const CoachingImage = () => {
-  // Use a placeholder image URL that's definitely accessible
-  const imageSrc = "https://via.placeholder.com/800x400?text=Coaching+mit+Hannah";
+  // For GitHub Pages, we'll use a reliable placeholder service
+  const imageSrc = "https://placehold.co/800x400/CECBC1/062d7f?text=Coaching+mit+Hannah&font=Jost";
 
   // Add specific style for the image container
   const containerStyle = {
