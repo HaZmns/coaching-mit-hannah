@@ -75,6 +75,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navbar {
@@ -89,7 +91,7 @@ header {
 /* Logo specific styles with strong font-family declaration */
 .logo, .logo * {
   font-family: 'Jost', sans-serif !important; /* Force Jost font with highest priority */
-  font-size: 30px; /* Reduced from 44px */
+  font-size: 24px; /* Reduced from 30px to 24px */
   font-weight: 500;
   color: var(--blue);
   text-transform: uppercase;
@@ -98,7 +100,8 @@ header {
 .logo {
   text-decoration: none;
   letter-spacing: 1px;
-  margin-bottom: 5px; /* Reduced from 15px to 5px to decrease space between logo and burger menu */
+  margin-top: 10px; /* Reduced top margin */
+  margin-bottom: 5px; /* Already reduced from 15px to 5px */
   text-align: center;
   display: flex;
   flex-direction: column;
