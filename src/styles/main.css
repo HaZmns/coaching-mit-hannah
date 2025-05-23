@@ -12,6 +12,7 @@
   --beige-dark: #A6A49D;
   --font-heading: 'Jost', sans-serif;
   --font-body: 'Newsreader', serif;
+  --burger-menu-margin-bottom: 5px; /* New CSS variable for burger menu bottom margin */
 }
 
 * {
@@ -439,7 +440,7 @@ footer {
   }
 
   .burger-menu {
-    margin-bottom: 5px; /* Slightly reduced bottom margin on mobile */
+    /* No need to specify margin-bottom here as it uses the variable */
   }
   
   .nav-links {
@@ -476,7 +477,7 @@ footer {
   }
   
   .burger-menu {
-    margin-bottom: 5px; /* Less bottom margin on small mobile */
+    /* No need to specify margin-bottom here as it uses the variable */
   }
 
   .navbar {
@@ -494,7 +495,7 @@ footer {
   height: 20px;
   padding: 8px;
   margin: 0 auto;
-  margin-bottom: 5px; /* Reduced from 10px to 0px */
+  margin-bottom: var(--burger-menu-margin-bottom); /* Using the CSS variable */
 }
 
 .burger-bar {
@@ -513,7 +514,7 @@ footer {
   top: 20px;
   z-index: 102;
   margin: 0; /* Reset all margins when open */
-  margin-bottom: 5px;
+  /* No need for margin-bottom here as it's reset */
 }
 
 /* Transforms burger into X when opened - adjusted for 20% smaller size */
