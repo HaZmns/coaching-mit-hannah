@@ -21,7 +21,7 @@ const HomePage = () => {
               <h1>{t('home.hero_title')}</h1>
               <h2>{t('home.hero_subtitle')}</h2>
               <p>{t('home.description')}</p>
-              <Link to="/coaching" className="btn">
+              <Link to="/contact" className="btn">
                 {t('home.cta_button')}
               </Link>
             </div>
