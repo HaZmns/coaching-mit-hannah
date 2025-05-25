@@ -112,10 +112,6 @@ header {
   line-height: 1.1;
 }
 
-.logo-line {
-  display: block;
-}
-
 /* First line (Coaching) can be slightly larger */
 .logo-line:first-child {
   font-size: 1.1em;
