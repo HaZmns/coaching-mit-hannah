@@ -373,12 +373,15 @@ footer {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
 }
 
 .footer-section h3 a {
   text-decoration: none;
   color: var(--blue);
   transition: color 0.3s ease;
+  font-family: var(--font-heading) !important;
 }
 
 .footer-section h3 a:hover {
