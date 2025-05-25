@@ -518,7 +518,7 @@ footer {
   position: relative;
   width: 24px;
   height: 20px;
-  margin: var(--header-vertical-spacing) auto;
+  /* margin: var(--header-vertical-spacing) auto; */
   left: 0;
   right: 0;
 }
