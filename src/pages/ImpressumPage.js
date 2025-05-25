@@ -36,7 +36,7 @@ const ImpressumPage = () => {
                 {t('impressum.contact')}
               </h3>
               <p>Email: hannah.ziemons@posteo.de</p>
-              <p>Phone: +1 123 456 7890</p>
+              <p>Phone: +49 15782580405 </p>
               <p>Website: www.coaching-mit-hannah.com</p>
             </div>
 

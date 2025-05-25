@@ -59,19 +59,7 @@ const ContactPage = () => {
               </div>
               <div style={{ marginBottom: '20px' }}>
                 <h4 style={{ marginBottom: '5px' }}>Phone</h4>
-                <p>+1 123 456 7890</p>
-              </div>
-              <div style={{ marginBottom: '20px' }}>
-                <h4 style={{ marginBottom: '5px' }}>Office Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                <p>Saturday: 10:00 AM - 2:00 PM</p>
-                <p>Sunday: Closed</p>
-              </div>
-              <div style={{ marginBottom: '20px' }}>
-                <h4 style={{ marginBottom: '5px' }}>Location</h4>
-                <p>123 Coaching Street</p>
-                <p>City, State 12345</p>
-                <p>Country</p>
+                <p>+49 15782580405</p>
               </div>
             </div>
 
