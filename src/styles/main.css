@@ -112,6 +112,10 @@ header {
   line-height: 1.1;
 }
 
+.logo-line {
+  display: block;
+}
+
 /* First line (Coaching) can be slightly larger */
 .logo-line:first-child {
   font-size: 1.1em;
@@ -514,7 +518,6 @@ footer {
   position: relative;
   width: 24px;
   height: 20px;
-  padding: 8px;
   margin: var(--header-vertical-spacing) auto;
   left: 0;
   right: 0;
