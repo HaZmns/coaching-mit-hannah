@@ -52,7 +52,6 @@ const ContactPage = () => {
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', maxWidth: '1000px', margin: '0 auto' }}>
             <div style={{ flex: '1', minWidth: '300px' }}>
-              <h3 style={{ marginBottom: '20px', color: 'var(--pistachio-dark)' }}>Get In Touch</h3>
               <div style={{ marginBottom: '20px' }}>
                 <h4 style={{ marginBottom: '5px' }}>Email</h4>
                 <p>hannah.ziemons@posteo.de</p>

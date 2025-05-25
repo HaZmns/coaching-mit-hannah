@@ -13,7 +13,7 @@
   --font-heading: 'Jost', sans-serif;
   --font-body: 'Newsreader', serif;
   --burger-menu-margin-bottom: 10px;
-  --header-vertical-spacing: 10px; /* Increased from 5px to 10px for more consistent spacing */
+  --header-vertical-spacing: 5px;
 }
 
 * {
