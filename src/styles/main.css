@@ -463,10 +463,6 @@ footer {
     margin: calc(var(--header-vertical-spacing) / 2) 0; /* Slightly reduced for mobile */
     line-height: 1.1;
   }
-
-  .burger-menu {
-    /* No need to specify margin-bottom here as it uses the variable */
-  }
   
   .nav-links {
     margin-top: 20px;
@@ -500,10 +496,6 @@ footer {
     margin: calc(var(--header-vertical-spacing) / 2) 0; /* Reduced for very small screens */
     line-height: 1.05;
   }
-  
-  .burger-menu {
-    /* No need to specify margin-bottom here as it uses the variable */
-  }
 
   .navbar {
     padding: calc(var(--header-vertical-spacing) / 2) 0; /* Further reduced for very small screens */
@@ -518,7 +510,7 @@ footer {
   position: relative;
   width: 24px;
   height: 20px;
-  margin: 20px auto;
+  margin-bottom: 20px;
   left: 0;
   right: 0;
 }
