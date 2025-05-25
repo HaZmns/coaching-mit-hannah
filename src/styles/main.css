@@ -78,7 +78,7 @@ header {
   top: 0;
   z-index: 100;
   padding-top: var(--header-vertical-spacing); /* Add padding to the top */
-  padding-bottom: 10px;
+  padding-bottom: var(--header-vertical-spacing) * 3;
 }
 
 .navbar {
