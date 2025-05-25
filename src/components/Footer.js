@@ -28,9 +28,9 @@ const Footer = () => {
 
           <div className="footer-section">
             <h3><Link to="/contact">{t('nav.contact')}</Link></h3>
-            <p>
-              Email: <a href="mailto:hannah.ziemons@posteo.de">hannah.ziemons@posteo.de</a><br />
-              Mobil: <a href="tel:+4915782580405">+49 15782580405</a>
+            <p style={{ fontSize: '14px' }}>
+              <a href="mailto:hannah.ziemons@posteo.de">Email</a><br />
+              <a href="tel:+4915782580405">Telefon</a>
             </p>
           </div>
         </div>

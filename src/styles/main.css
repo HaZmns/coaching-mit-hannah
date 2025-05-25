@@ -360,12 +360,20 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer-section {
   flex: 1;
-  min-width: 200px;
+  min-width: 160px; /* Reduced from 200px to fit more items in a row */
   margin-bottom: 20px;
+  margin-right: 10px; /* Add some right margin for spacing */
+}
+
+/* Make the contact section not grow larger than others */
+.footer-section:last-child {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 /* Footer headings */
@@ -375,6 +383,7 @@ footer {
   font-weight: 400;
   font-family: var(--font-heading);
   text-transform: uppercase;
+  white-space: nowrap; /* Prevent wrapping of heading text */
 }
 
 .footer-section h3 a {
@@ -483,7 +492,15 @@ footer {
   }
   
   .footer-content {
-    flex-direction: column;
+    flex-direction: row; /* Keep it as row even on medium screens */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .footer-section {
+    min-width: 120px; /* Even smaller on medium screens */
+    margin-right: 20px;
+    flex: 0 0 auto; /* Don't grow or shrink */
   }
 }
 
@@ -499,6 +516,16 @@ footer {
 
   .navbar {
     padding: calc(var(--header-vertical-spacing) / 2) 0; /* Further reduced for very small screens */
+  }
+  
+  .footer-content {
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    min-width: 100px;
+    margin-right: 10px;
+    flex: 0 1 auto; /* Allow shrinking but not growing */
   }
 }
 
