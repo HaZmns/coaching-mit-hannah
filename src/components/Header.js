@@ -18,16 +18,25 @@ const Header = () => {
     <header>
       <div className="container">
         <nav className="navbar">
-          <Link to="/" className="logo">
-            <span className="logo-line">Coaching</span>
-            <span className="logo-line">mit</span>
-            <span className="logo-line">Hannah</span>
-          </Link>
-          
-          <div className="burger-menu" onClick={toggleMenu}>
-            <div className={`burger-bar ${menuOpen ? 'open' : ''}`}></div>
-            <div className={`burger-bar ${menuOpen ? 'open' : ''}`}></div>
-            <div className={`burger-bar ${menuOpen ? 'open' : ''}`}></div>
+          <div style={{ 
+            width: '100%', 
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <Link to="/" className="logo">
+              <span className="logo-line">Coaching</span>
+              <span className="logo-line">mit</span>
+              <span className="logo-line">Hannah</span>
+            </Link>
+            
+            <div className="burger-menu" onClick={toggleMenu}>
+              <div className={`burger-bar ${menuOpen ? 'open' : ''}`}></div>
+              <div className={`burger-bar ${menuOpen ? 'open' : ''}`}></div>
+              <div className={`burger-bar ${menuOpen ? 'open' : ''}`}></div>
+            </div>
           </div>
           
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>

@@ -12,8 +12,8 @@
   --beige-dark: #A6A49D;
   --font-heading: 'Jost', sans-serif;
   --font-body: 'Newsreader', serif;
-  --burger-menu-margin-bottom: 10px; /* Burger menu bottom margin */
-  --header-vertical-spacing: 5px; /* New variable for consistent vertical spacing in header */
+  --burger-menu-margin-bottom: 10px;
+  --header-vertical-spacing: 10px; /* Increased from 5px to 10px for more consistent spacing */
 }
 
 * {
@@ -77,8 +77,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: var(--header-vertical-spacing); /* Add padding to the top */
+  padding-bottom: var(--header-vertical-spacing); /* Add padding to the bottom */
 }
 
 .navbar {
@@ -86,8 +86,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--header-vertical-spacing) 0; /* Using the variable for consistent spacing */
+  padding: 0;
   position: relative;
+  text-align: center;
 }
 
 /* Logo specific styles with strong font-family declaration */
@@ -102,7 +103,7 @@ header {
 .logo {
   text-decoration: none;
   letter-spacing: 1px;
-  margin: var(--header-vertical-spacing) 0; /* Using the variable for consistent spacing */
+  margin: var(--header-vertical-spacing) 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -515,7 +516,9 @@ footer {
   width: 24px;
   height: 20px;
   padding: 8px;
-  margin: var(--header-vertical-spacing) auto; /* Using the variable for consistent spacing */
+  margin: var(--header-vertical-spacing) auto;
+  left: 0;
+  right: 0;
 }
 
 .burger-bar {
