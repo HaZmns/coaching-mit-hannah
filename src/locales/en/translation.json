@@ -16,12 +16,14 @@
   },
   "coaching": {
     "hero_title": "Coaching",
-    "hero_subtitle": "Was heißt das eigentlich?",
-    "description": "..."
+    "hero_subtitle": "What can you expect?",
+    "description": "In my coaching sessions I support you in finding clarity and structure in your toughts and to grow in phases of development - whether in your professional, private or in between. You don't need to have a clear goal. It's enough if you notice: I want something to change.",
+    "second_subtitle": "Common Coaching Topics",
+    "topic_list": "Professional (Re-) Orientation"
   },
   "about": {
     "hero_title": "About Me",
-    "description": "I am a professional coach with over 10 years of experience helping individuals achieve their personal and professional goals. My approach combines proven techniques with personalized strategies tailored to your unique situation."
+    "description": "I am a certified coach and with a professional background in business and data anyltics. But my passion - next to learning new languages, (Italian) Food, good books and the outdoors - is in accompanying people on their way to solve their own thought puzzles. As I am relatively new on this journey I am always looking for new inspirations to incorporate in my sessions and happy to gather more feedback. My approach combines proven techniques with personalized strategies tailored to your unique situation."
   },
   "faq": {
     "title": "Frequently Asked Questions",
