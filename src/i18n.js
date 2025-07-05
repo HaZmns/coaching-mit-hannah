@@ -19,7 +19,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'de',
     debug: false,
     interpolation: {
       escapeValue: false // React already does escaping
