@@ -38943,7 +38943,7 @@ const resources = {
 };
 (0, _i18NextDefault.default).use((0, _i18NextBrowserLanguagedetectorDefault.default)).use((0, _reactI18Next.initReactI18next)).init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'de',
     debug: false,
     interpolation: {
         escapeValue: false // React already does escaping
