@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div>
       <section className="hero">
-        <div className="container" style={{ padding: '0 150px' }}>
+        <div className="container">
           <div style={{ 
             display: 'flex', 
             flexWrap: 'wrap', 
