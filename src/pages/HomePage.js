@@ -1,10 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import CoachingImage from '../components/CoachingImage';
 
 const HomePage = () => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [formStatus, setFormStatus] = useState({
+    submitted: false,
+    success: false,
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Here you would normally send the form data to a server
+    // For this example, we'll simulate a successful submission
+    setFormStatus({
+      submitted: true,
+      success: true,
+      message: t('contact.success_message')
+    });
+    
+    // Reset form after successful submission
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
 
   return (
     <div>
@@ -55,7 +92,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" >
         <div className="hero-flex-container">
           <div className="hero-content">
             <h1>{t('about.hero_title')}</h1>
@@ -63,7 +100,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section" style={{ backgroundColor: 'var(--gray)' }}>
         <div className="container">
           <h2 className="section-title">{t('contact.title')}</h2>
           <p className="text-center" style={{ maxWidth: '800px', margin: '0 auto 30px' }}>
@@ -96,9 +133,113 @@ const HomePage = () => {
             </div>
             
             <div style={{ flex: '1', minWidth: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <Link to="/contact" className="btn contact-form-link">
-                Kontaktformular
-              </Link>
+              {formStatus.submitted && formStatus.success ? (
+                <div style={{ 
+                  backgroundColor: 'var(--pistachio-light)', 
+                  padding: '20px', 
+                  borderRadius: '8px',
+                  marginBottom: '20px'
+                }}>
+                  <p>{formStatus.message}</p>
+                </div>
+              ) : null}
+
+              <form onSubmit={handleSubmit} style={{ 
+                backgroundColor: 'var(--white)',
+                padding: '30px',
+                borderRadius: '8px',
+                boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
+              }}>
+                <div style={{ marginBottom: '20px' }}>
+                  <label 
+                    htmlFor="name" 
+                    style={{ 
+                      display: 'block', 
+                      marginBottom: '5px',
+                      fontWeight: '500'
+                    }}
+                  >
+                    {t('contact.name_label')}
+                  </label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    style={{
+                      width: '100%',
+                      padding: '10px',
+                      border: '1px solid #ddd',
+                      borderRadius: '4px'
+                    }}
+                  />
+                </div>
+
+                <div style={{ marginBottom: '20px' }}>
+                  <label 
+                    htmlFor="email" 
+                    style={{ 
+                      display: 'block', 
+                      marginBottom: '5px',
+                      fontWeight: '500'
+                    }}
+                  >
+                    {t('contact.email_label')}
+                  </label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    style={{
+                      width: '100%',
+                      padding: '10px',
+                      border: '1px solid #ddd',
+                      borderRadius: '4px'
+                    }}
+                  />
+                </div>
+
+                <div style={{ marginBottom: '20px' }}>
+                  <label 
+                    htmlFor="message" 
+                    style={{ 
+                      display: 'block', 
+                      marginBottom: '5px',
+                      fontWeight: '500'
+                    }}
+                  >
+                    {t('contact.message_label')}
+                  </label>
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    rows="5"
+                    style={{
+                      width: '100%',
+                      padding: '10px',
+                      border: '1px solid #ddd',
+                      borderRadius: '4px',
+                      resize: 'vertical'
+                    }}
+                  ></textarea>
+                </div>
+
+                <button 
+                  type="submit" 
+                  className="btn"
+                  style={{ width: '100%' }}
+                >
+                  {t('contact.submit_button')}
+                </button>
+              </form>
             </div>
           </div>
         </div>
