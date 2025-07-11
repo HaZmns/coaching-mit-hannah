@@ -290,6 +290,21 @@ p.description {
   margin: 1em 0;
 }
 
+/* HomePage specific styles */
+.contact-section {
+  margin-bottom: 20px;
+}
+
+.contact-section h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.contact-form-link {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
 
 /* Section Styles */
 .section {

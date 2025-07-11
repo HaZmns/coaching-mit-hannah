@@ -49,11 +49,7 @@ const HomePage = () => {
               listStyleType: 'disc', 
               paddingLeft: '20px',
               margin: '15px 0 25px',
-              lineHeight: '1.7',
-              fontSize: '20px',
-              fontWeight: '300',
-              fontFamily: 'var(--font-body)',
-              color: 'var(--blue)'
+              lineHeight: '1.7'
             }}>
               <li>berufliche (Neu-) Orientierung</li>
               <li>Konflikte im Privat- oder Arbeitsleben</li>
@@ -89,26 +85,16 @@ const HomePage = () => {
             margin: '0 auto' 
           }}>
             <div style={{ flex: '1', minWidth: '300px', textAlign: 'left' }}>
-              <div style={{ marginBottom: '20px' }}>
-                <h3 style={{ marginBottom: '10px', fontWeight: '400' }}>Email</h3>
-                <p style={{ 
-                  fontSize: '20px', 
-                  fontWeight: '300', 
-                  fontFamily: 'var(--font-body)', 
-                  color: 'var(--blue)'
-                }}>
+              <div className="contact-section">
+                <h3>Email</h3>
+                <p>
                   hannah.ziemons@posteo.de
                 </p>
               </div>
               
-              <div style={{ marginBottom: '20px' }}>
-                <h3 style={{ marginBottom: '10px', fontWeight: '400' }}>Telefon</h3>
-                <p style={{ 
-                  fontSize: '20px', 
-                  fontWeight: '300', 
-                  fontFamily: 'var(--font-body)', 
-                  color: 'var(--blue)'
-                }}>
+              <div className="contact-section">
+                <h3>Telefon</h3>
+                <p>
                   +49 15782580405
                 </p>
               </div>
@@ -116,7 +102,7 @@ const HomePage = () => {
             </div>
             
             <div style={{ flex: '1', minWidth: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <Link to="/contact" className="btn" style={{ marginTop: '20px', alignSelf: 'flex-start' }}>
+              <Link to="/contact" className="btn contact-form-link">
                 Kontaktformular
               </Link>
             </div>

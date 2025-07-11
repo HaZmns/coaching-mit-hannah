@@ -1,8 +1,9 @@
 {
   "mcpServers": {
-    "datapilot": {
+    "datamate": {
       "url": "http://localhost:7700/sse",
-      "type": "sse"
+      "type": "sse",
+      "updatedAt": "2025-07-11T11:01:22.943Z"
     }
   }
 }
