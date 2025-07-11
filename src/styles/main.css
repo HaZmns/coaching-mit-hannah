@@ -245,7 +245,7 @@ header {
 }
 
 .hero p, .hero-content p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
   color: var(--blue);
   font-family: var(--font-body);
