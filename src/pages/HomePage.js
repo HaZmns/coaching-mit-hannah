@@ -34,7 +34,7 @@ const HomePage = () => {
 
       <section className="section" style={{ backgroundColor: 'var(--gray)' }}>
         <div className="container">
-          <div className="hero-content">
+          <div className="hero-flex-container">
             <h1>{t('coaching.hero_title')}</h1>
             <h2>{t('coaching.hero_subtitle')}</h2>
             <p>{t('coaching.description')}</p>
