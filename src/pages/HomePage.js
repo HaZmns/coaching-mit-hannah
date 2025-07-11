@@ -10,13 +10,7 @@ const HomePage = () => {
     <div>
       <section className="hero">
         <div className="container">
-          <div style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            alignItems: 'flex-start',
-            justifyContent: 'space-between',
-            gap: '30px'
-          }}>
+          <div className="hero-flex-container">
             <div className="hero-content" style={{ flex: '1', minWidth: '300px' }}>
               <h1>{t('home.hero_title')}</h1>
               <h2>{t('home.hero_subtitle')}</h2>
