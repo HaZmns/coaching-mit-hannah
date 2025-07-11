@@ -34,6 +34,12 @@ body {
 p, li, a:not(.btn), span, blockquote, .text-body {
   font-family: var(--font-body);
   font-weight: 300;
+  font-size: 18px;
+}
+
+/* Reduce spacing between list items */
+li {
+  margin-bottom: 0px;
 }
 
 /* Explicitly ensure text elements that should use Jost do so */
@@ -253,8 +259,7 @@ header {
   color: var(--blue);
 }
 
-.hero p, .hero-content p {
-  font-size: 18px;
+.hero p, .hero-content p, .hero li, .hero-content li {
   margin-bottom: 20px;
   color: var(--blue);
   font-family: var(--font-body);

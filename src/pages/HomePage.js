@@ -33,8 +33,8 @@ const HomePage = () => {
       </section>
 
       <section className="section" style={{ backgroundColor: 'var(--gray)' }}>
-        <div className="container">
-          <div className="hero-flex-container">
+        <div className="hero-flex-container">
+          <div className="hero-content">
             <h1>{t('coaching.hero_title')}</h1>
             <h2>{t('coaching.hero_subtitle')}</h2>
             <p>{t('coaching.description')}</p>
@@ -56,7 +56,7 @@ const HomePage = () => {
       </section>
 
       <section className="section">
-        <div className="container">
+        <div className="hero-flex-container">
           <div className="hero-content">
             <h1>{t('about.hero_title')}</h1>
             <p>{t('about.description')}</p>          
