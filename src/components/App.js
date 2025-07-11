@@ -9,6 +9,7 @@ import FAQPage from '../pages/FAQPage';
 import ContactPage from '../pages/ContactPage';
 import PricesPage from '../pages/PricesPage';
 import ImpressumPage from '../pages/ImpressumPage';
+import '../styles/main.css';
 
 const App = () => {
   return (
