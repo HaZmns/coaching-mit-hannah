@@ -27,7 +27,7 @@ const AboutPage = () => {
                 boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
               }}>
                 <img 
-                  src="./images/hannah_chair.png"
+                  src="./images/coaching.png"
                   style={{
                     width: '100%',
                     height: '100%',
@@ -172,7 +172,7 @@ const AboutPage = () => {
                 boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
               }}>
                 <img 
-                  src="./images/hannah_chair.png" //hannah_profile_sw.png"
+                  src="./images/coaching.png" //hannah_profile_sw.png"
                   style={{
                     width: '100%',
                     height: '100%',
