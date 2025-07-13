@@ -6,38 +6,48 @@ const AboutPage = () => {
 
   return (
     <div>
-      <section className="section" style={{ paddingTop: '60px' }}>
+      <section className="section" style={{ paddingTop: '60px'}}>
         <div className="container">
           <h1 className="section-title">{t('about.title')}</h1>
           <p className="text-center" style={{ maxWidth: '800px', margin: '0 auto 50px' }}>
             {t('about.description')}
           </p>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--gray)', padding: '60px' }}>
             <div style={{ flex: '0 0 300px', textAlign: 'center' }}>
               <div style={{ 
                 width: '250px', 
                 height: '250px', 
                 borderRadius: '50%', 
-                backgroundColor: 'var(--pistachio-light)', 
                 margin: '0 auto 20px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                fontSize: '24px',
-                fontWeight: 'bold',
-                color: 'var(--pistachio-dark)'
+                overflow: 'hidden',
+                boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
               }}>
-                Profile Photo
+                <img 
+                  src="./images/hannah_chair.png"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '50%'
+                  }}
+                  onError={(e) => {
+                    console.error('Image failed to load');
+                    e.target.style.display = 'none';
+                  }}
+                />
               </div>
-              <h3 style={{ marginBottom: '10px' }}>John Doe</h3>
-              <p>Professional Coach</p>
+              <h3 style={{ marginBottom: '10px' }}>Hannah Ziemons</h3>
+              <p>Systemische Coach</p>
             </div>
 
             <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-              <p style={{ marginBottom: '20px' }}>{t('about.bio')}</p>
-              
               <h3>{t('about.values_title')}</h3>
+
+              <p style={{ marginBottom: '20px' }}>{t('about.bio')}</p>
               <div style={{ 
                 display: 'flex', 
                 gap: '20px', 
@@ -46,7 +56,7 @@ const AboutPage = () => {
               }}>
                 <div style={{ 
                   flex: '1',
-                  minWidth: '150px',
+                  minWidth: '130px',
                   backgroundColor: 'var(--pistachio-light)',
                   padding: '20px',
                   borderRadius: '8px',
@@ -56,7 +66,7 @@ const AboutPage = () => {
                 </div>
                 <div style={{ 
                   flex: '1',
-                  minWidth: '150px',
+                  minWidth: '130px',
                   backgroundColor: 'var(--pistachio-light)',
                   padding: '20px',
                   borderRadius: '8px',
@@ -66,7 +76,7 @@ const AboutPage = () => {
                 </div>
                 <div style={{ 
                   flex: '1',
-                  minWidth: '150px',
+                  minWidth: '130px',
                   backgroundColor: 'var(--pistachio-light)',
                   padding: '20px',
                   borderRadius: '8px',
@@ -74,92 +84,109 @@ const AboutPage = () => {
                 }}>
                   <h4>{t('about.value3')}</h4>
                 </div>
+                <div style={{ 
+                  flex: '1',
+                  minWidth: '130px',
+                  backgroundColor: 'var(--pistachio-light)',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <h4>{t('about.value4')}</h4>
+
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ backgroundColor: 'var(--gray)' }}>
+      {/* Mirrored section with image on the right */}
+      <section className="section" >
         <div className="container">
-          <h2 className="section-title">My Journey</h2>
-          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <div style={{ 
-              display: 'flex', 
-              flexDirection: 'column',
-              gap: '30px'
-            }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+              <h3>Meine Interessen</h3>
+              <p style={{ marginBottom: '20px' }}>
+                Werte klingen immer gut.. aber auch abstrakt. Um das Bild deiner möglichen (zukünftigen) Coach ein kleines bisschen mehr auszumalen, hier eine kleine Auswahl, der Dinge die mich - neben dem Coaching - einnehmen und faszinieren.
+              </p>
               <div style={{ 
-                display: 'flex',
-                gap: '20px',
-                alignItems: 'flex-start'
+                display: 'flex', 
+                gap: '20px', 
+                marginTop: '20px',
+                flexWrap: 'wrap'
               }}>
                 <div style={{ 
-                  backgroundColor: 'var(--pistachio)',
-                  color: 'white',
-                  borderRadius: '50%',
-                  width: '50px',
-                  height: '50px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
+                  flex: '1',
+                  minWidth: '130px',
+                  backgroundColor: 'var(--pistachio-light)',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  textAlign: 'center'
                 }}>
-                  1
+                  <h4>Selbstgemachte Pasta</h4>
                 </div>
-                <div>
-                  <h3>Early Career</h3>
-                  <p>I began my professional journey in the corporate world, where I quickly realized my passion for helping others develop their potential.</p>
+                <div style={{ 
+                  flex: '1',
+                  minWidth: '130px',
+                  backgroundColor: 'var(--pistachio-light)',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <h4>Berge & Natur</h4>
+                </div>
+                <div style={{ 
+                  flex: '1',
+                  minWidth: '130px',
+                  backgroundColor: 'var(--pistachio-light)',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <h4>Gute Bücher & Podcasts</h4>
+                </div>
+                <div style={{ 
+                  flex: '1',
+                  minWidth: '130px',
+                  backgroundColor: 'var(--pistachio-light)',
+                  padding: '20px',
+                  borderRadius: '8px',
+                  textAlign: 'center'
+                }}>
+                  <h4>Neue Sprachen</h4>
                 </div>
               </div>
+            </div>
 
+            <div style={{ flex: '0 0 300px', textAlign: 'center' }}>
               <div style={{ 
+                width: '250px', 
+                height: '250px', 
+                borderRadius: '50%', 
+                margin: '0 auto 20px',
                 display: 'flex',
-                gap: '20px',
-                alignItems: 'flex-start'
+                alignItems: 'center',
+                justifyContent: 'center',
+                overflow: 'hidden',
+                boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
               }}>
-                <div style={{ 
-                  backgroundColor: 'var(--pistachio)',
-                  color: 'white',
-                  borderRadius: '50%',
-                  width: '50px',
-                  height: '50px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                }}>
-                  2
-                </div>
-                <div>
-                  <h3>Professional Training</h3>
-                  <p>I pursued certifications in coaching methodologies, positive psychology, and behavioral science to build a strong foundation for my practice.</p>
-                </div>
+                <img 
+                  src="./images/hannah_chair.png" //hannah_profile_sw.png"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '50%'
+                  }}
+                  onError={(e) => {
+                    console.error('Image failed to load');
+                    e.target.style.display = 'none';
+                  }}
+                /> 
               </div>
-
-              <div style={{ 
-                display: 'flex',
-                gap: '20px',
-                alignItems: 'flex-start'
-              }}>
-                <div style={{ 
-                  backgroundColor: 'var(--pistachio)',
-                  color: 'white',
-                  borderRadius: '50%',
-                  width: '50px',
-                  height: '50px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                }}>
-                  3
-                </div>
-                <div>
-                  <h3>Coaching Practice</h3>
-                  <p>For the past decade, I've been helping individuals transform their lives through personalized coaching programs tailored to their unique needs and goals.</p>
-                </div>
-              </div>
+              {/* <h3 style={{ marginBottom: '10px' }}>Systemisches Coaching</h3>
+              <p>Gemeinsam Lösungen finden</p> */}
             </div>
           </div>
         </div>
