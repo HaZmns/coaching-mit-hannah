@@ -16,10 +16,17 @@
   },
   "coaching": {
     "hero_title": "COACHING",
+    "title": "Systemisches Coaching",
     "hero_subtitle": "Was heißt das eigentlich?",
     "description": "In meinem systemischen Coaching geht es darum Veränderungen anzustoßen und Menschen in Phasen der Weiterentwicklung zu unterstützen – sei es beruflich, privat oder irgendwo dazwischen. Du musst kein fertiges Ziel haben. Es reicht, wenn du merkst: Ich will, dass sich etwas ändert.",
     "second_subtitle": "Häufige Coaching-Themen",
-    "topic_list": "Berufliche (Neu-) Orientierung"
+    "topic_list": "Berufliche (Neu-) Orientierung", 
+    "feature1_title": "Berufliche (Neu-) Orientierung",
+    "feature1_description": "Ob wir mit unserem Arbeitsleben zufrieden sind oder nicht, wirkt sich schnell auf alle anderen Lebensbereiche aus. Umso mehr kann es sich lohnen, sich bewusst damit auseinanderzusetzen",
+    "feature2_title": "Beziehungen und Konflikte",
+    "feature2_description": "...",
+    "feature3_title": "Werte und Lebensziele",
+    "feature3_description": "..."
   },
   "about": {
     "hero_title": "ÜBER MICH",
@@ -42,7 +49,7 @@
     "name_label": "Name",
     "email_label": "E-Mail",
     "message_label": "Nachricht",
-    "submit_button": "Nachricht senden",
+    "submit_button": "NACHRICHT SENDEN",
     "success_message": "Ihre Nachricht wurde erfolgreich gesendet! Ich werde mich in Kürze bei Ihnen melden.",
     "error_message": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
   },

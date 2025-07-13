@@ -18,12 +18,12 @@ const CoachingPage = () => {
               <div className="card-content">
                 <h3>{t('coaching.feature1_title')}</h3>
                 <p>{t('coaching.feature1_description')}</p>
-                <div style={{ backgroundColor: 'var(--pistachio-light)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
+                <div style={{ backgroundColor: 'var(--gray)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
                   <ul style={{ paddingLeft: '20px' }}>
-                    <li>Self-awareness development</li>
-                    <li>Goal setting and achievement</li>
-                    <li>Overcoming limiting beliefs</li>
-                    <li>Building confidence and resilience</li>
+                    <li>Wo möchte ich meine berufliche Laufbahn starten?</li>
+                    <li>Wie kann ich gelassener mit beruflichen Konflikten umgehen?</li>
+                    <li>Ist jetzt die richtige Zeit für einen Job-Wechsel?</li>
+                    <li>Wie schaffe ich den Einstieg in eine neue Branche?</li>
                   </ul>
                 </div>
               </div>
@@ -33,7 +33,7 @@ const CoachingPage = () => {
               <div className="card-content">
                 <h3>{t('coaching.feature2_title')}</h3>
                 <p>{t('coaching.feature2_description')}</p>
-                <div style={{ backgroundColor: 'var(--pistachio-light)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
+                <div style={{ backgroundColor: 'var(--gray)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
                   <ul style={{ paddingLeft: '20px' }}>
                     <li>Career path planning</li>
                     <li>Job search strategy</li>
@@ -48,7 +48,7 @@ const CoachingPage = () => {
               <div className="card-content">
                 <h3>{t('coaching.feature3_title')}</h3>
                 <p>{t('coaching.feature3_description')}</p>
-                <div style={{ backgroundColor: 'var(--pistachio-light)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
+                <div style={{ backgroundColor: 'var(--gray)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
                   <ul style={{ paddingLeft: '20px' }}>
                     <li>Stress management</li>
                     <li>Time management techniques</li>
@@ -62,34 +62,14 @@ const CoachingPage = () => {
         </div>
       </section>
 
-      <section className="section" style={{ backgroundColor: 'var(--pistachio-light)' }}>
+      <section className="section" style={{ backgroundColor: 'var(--gray)' }}>
         <div className="container">
-          <h2 className="section-title">My Coaching Approach</h2>
+          <h2 className="section-title">Mein Ansatz</h2>
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <p style={{ marginBottom: '30px' }}>
-              My coaching methodology is based on a holistic approach that considers all aspects of your life. I believe in creating a safe, supportive space where you can explore challenges, discover insights, and create meaningful change.
+              Mein Herangehen beim Coaching basiert auf systemischen und personenzentrierten Komponenten, sowie meiner persönlichen Erfahrung. Das wichtigste dabei ist, dass du einen sicheren und motivierenden Raum hast, dein Anliegen zu erforschen und Herausforderungen zu begnen, frei von Bewertungen und Ratschlägen. Auch wenn ich es spannend finde, mich ständig weiterzubilden und dir gerne verschiedene Tools anbieten, steht am Ende im Mittelpunkt, dass du selbst entscheidest, wie du deine Zeile erreichst.
             </p>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
-              <div style={{ flex: '1', minWidth: '250px', textAlign: 'left' }}>
-                <h3 style={{ color: 'var(--pistachio-dark)', marginBottom: '15px' }}>My Process</h3>
-                <ol style={{ paddingLeft: '20px' }}>
-                  <li>Initial consultation to understand your needs</li>
-                  <li>Goal setting and action planning</li>
-                  <li>Regular coaching sessions</li>
-                  <li>Progress evaluation and adjustments</li>
-                  <li>Celebration of achievements</li>
-                </ol>
-              </div>
-              <div style={{ flex: '1', minWidth: '250px', textAlign: 'left' }}>
-                <h3 style={{ color: 'var(--pistachio-dark)', marginBottom: '15px' }}>My Tools</h3>
-                <ul style={{ paddingLeft: '20px' }}>
-                  <li>Positive psychology techniques</li>
-                  <li>Cognitive-behavioral strategies</li>
-                  <li>Solution-focused approaches</li>
-                  <li>Personality assessments</li>
-                  <li>Mindfulness practices</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

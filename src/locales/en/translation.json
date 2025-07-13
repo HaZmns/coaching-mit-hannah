@@ -42,7 +42,7 @@
     "name_label": "Name",
     "email_label": "Email",
     "message_label": "Message",
-    "submit_button": "Send Message",
+    "submit_button": "SEND MESSAGE",
     "success_message": "Your message has been sent successfully! I'll get back to you soon.",
     "error_message": "There was an error sending your message. Please try again."
   },
