@@ -16,7 +16,7 @@ const PriceCard = ({ title, price, description, features, isPopular }) => {
       transform: isPopular ? 'scale(1.05)' : 'scale(1)',
       zIndex: isPopular ? 2 : 1
     }}>
-      {isPopular && (
+      {/* {isPopular && (
         <div style={{
           position: 'absolute',
           top: '0',
@@ -30,7 +30,7 @@ const PriceCard = ({ title, price, description, features, isPopular }) => {
         }}>
           Most Popular
         </div>
-      )}
+      )} */}
       <div style={{
         padding: '30px',
         backgroundColor: isPopular ? 'var(--pistachio-light)' : 'var(--white)',
@@ -73,7 +73,7 @@ const PriceCard = ({ title, price, description, features, isPopular }) => {
             display: 'block',
             textAlign: 'center',
             width: '100%',
-            backgroundColor: isPopular ? 'var(--pistachio-dark)' : 'var(--pistachio)'
+            backgroundColor: isPopular ? 'var(--pistachio-real)' : 'var(--pistachio)'
           }}
         >
           {t('contact.title')}
@@ -109,10 +109,10 @@ const PricesPage = () => {
                 price={t('prices.package1_price')}
                 description={t('prices.package1_description')}
                 features={[
-                  '60-minute session',
-                  'Personalized coaching',
-                  'Session recording',
-                  'Follow-up email'
+                  'Gemeinsames Verständnis für deine Themen & Ziele',
+                  'Klärung möglicher Fragen',
+                  'Klarheit über Erwartungshaltung',
+                  'Terminierung eines möglichen Erst-Gesprächs'
                 ]}
                 isPopular={false}
               />
@@ -124,11 +124,10 @@ const PricesPage = () => {
                 price={t('prices.package2_price')}
                 description={t('prices.package2_description')}
                 features={[
-                  'Four 60-minute sessions',
-                  'Personalized coaching',
-                  'Session recordings',
-                  'Email support between sessions',
-                  'Progress tracking'
+                  'Definition deines Coaching-Anliegens',
+                  'Verständnis für die relevanten System-Komponenten',
+                  'Entwicklung & Erprobung erster Lösungsansätze',
+                  'Festhalten der nächsten Schritte'
                 ]}
                 isPopular={true}
               />
@@ -140,13 +139,10 @@ const PricesPage = () => {
                 price={t('prices.package3_price')}
                 description={t('prices.package3_description')}
                 features={[
-                  'Twelve 60-minute sessions',
-                  'Personalized coaching',
-                  'Session recordings',
-                  'Priority email support',
-                  'Progress tracking',
-                  'Custom resources and materials',
-                  'Free bonus session'
+                  'Reflexion bisheriger Schritte',
+                  'Vertiefung und Festigung neuer Erkenntnisse',
+                  'Zeit andere Tools anzuwenden',
+                  'Erweiterung um langfristigere (Coaching-) Ziele'
                 ]}
                 isPopular={false}
               />
@@ -156,16 +152,16 @@ const PricesPage = () => {
           <div style={{ 
             maxWidth: '800px', 
             margin: '50px auto 0',
-            backgroundColor: 'var(--gray)',
+            backgroundColor: 'var(--pistachio-very-light)',
             padding: '30px',
             borderRadius: '8px',
             textAlign: 'center'
           }}>
-            <h3 style={{ marginBottom: '15px' }}>Need a custom package?</h3>
+            <h3 style={{ marginBottom: '15px' }}>Suchst du nach einem anderen Format?</h3>
             <p style={{ marginBottom: '20px' }}>
-              If you have specific needs that aren't covered by these packages, please contact me for a custom coaching solution.
+              Falls du Coaching-Bedarf hast, der sich von den oben beschrieben Optionen unterscheidet, kontaktiere mich gerne und wir können schauen, ob wir eine passende Lösung finden.
             </p>
-            <Link to="/contact" className="btn">
+            <Link to="/contact" className="btn" style={{ backgroundColor: 'var(--pistachio)' }}>
               {t('contact.title')}
             </Link>
           </div>
