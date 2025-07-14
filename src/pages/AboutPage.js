@@ -9,11 +9,15 @@ const AboutPage = () => {
       <section className="section" style={{ paddingTop: '60px'}}>
         <div className="container">
           <h1 className="section-title">{t('about.title')}</h1>
-          <p className="text-center" style={{ maxWidth: '800px', margin: '0 auto 50px' }}>
+          <p className="text-center" style={{ maxWidth: '800px', margin: '0 auto 0px' }}>
             {t('about.description')}
           </p>
+        </div>
+      </section>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--gray)', padding: '60px' }}>
+      <section className="section" style={{ backgroundColor: 'var(--gray)', padding: '60px 0'}}>
+        <div className="container">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ flex: '0 0 300px', textAlign: 'center' }}>
               <div style={{ 
                 width: '250px', 
@@ -104,7 +108,7 @@ const AboutPage = () => {
       {/* Mirrored section with image on the right */}
       <section className="section" >
         <div className="container">
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center', marginBottom: '40px' }}>
             <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
               <h3>Meine Interessen</h3>
               <p style={{ marginBottom: '20px' }}>
@@ -172,7 +176,7 @@ const AboutPage = () => {
                 boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
               }}>
                 <img 
-                  src="./images/coaching.png" //hannah_profile_sw.png"
+                  src="./images/coaching.png"
                   style={{
                     width: '100%',
                     height: '100%',
