@@ -176,7 +176,7 @@ const AboutPage = () => {
                 boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
               }}>
                 <img 
-                  src="./images/coaching.png"
+                  src="./images/hannah_profile_sw.png"
                   style={{
                     width: '100%',
                     height: '100%',
