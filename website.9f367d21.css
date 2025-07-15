@@ -149,7 +149,7 @@ header {
   display: block;
 }
 
-.nav-links li:not(:last-child) {
+.nav-links li:not(:last-child):not(.menu-close-button) {
   border-bottom: 1px solid #00000008;
   padding-bottom: 3px;
 }
@@ -470,12 +470,17 @@ footer {
 
   .nav-links {
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .nav-links li {
     margin-bottom: 10px;
     margin-left: 0;
+  }
+
+  .burger-menu.open, .menu-close-button {
+    top: 15px;
+    left: 15px;
   }
 
   .hero h1 {
@@ -510,6 +515,11 @@ footer {
 
   .navbar {
     padding: calc(var(--header-vertical-spacing) / 2) 0;
+  }
+
+  .burger-menu.open, .menu-close-button {
+    top: 10px;
+    left: 10px;
   }
 
   .footer-content {
@@ -547,9 +557,31 @@ footer {
 .burger-menu.open {
   z-index: 102;
   margin: 0;
-  position: fixed;
+  position: absolute;
   top: 20px;
-  right: 20px;
+  left: 0;
+}
+
+.menu-close-button {
+  z-index: 102;
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  border-bottom: none !important;
+}
+
+.menu-close-button .burger-menu {
+  cursor: pointer;
+  margin: 0;
+  position: static;
+}
+
+.menu-close-button .burger-bar {
+  background-color: var(--blue);
 }
 
 .burger-bar.open:first-child {

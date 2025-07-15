@@ -32490,18 +32490,56 @@ const Header = ()=>{
                         className: `nav-links ${menuOpen ? 'open' : ''}`,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "menu-close-button",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "burger-menu close-menu",
+                                    onClick: toggleMenu,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "burger-bar open"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Header.js",
+                                            lineNumber: 46,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "burger-bar open"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Header.js",
+                                            lineNumber: 47,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "burger-bar open"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Header.js",
+                                            lineNumber: 48,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 45,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/coaching",
                                     onClick: toggleMenu,
                                     children: t('nav.coaching')
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 44,
+                                    lineNumber: 52,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 43,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -32511,12 +32549,12 @@ const Header = ()=>{
                                     children: t('nav.about')
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 47,
+                                    lineNumber: 55,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 46,
+                                lineNumber: 54,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -32526,12 +32564,12 @@ const Header = ()=>{
                                     children: t('nav.faq')
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 50,
+                                    lineNumber: 58,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 49,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -32541,12 +32579,12 @@ const Header = ()=>{
                                     children: t('nav.contact')
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 53,
+                                    lineNumber: 61,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 52,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -32556,12 +32594,12 @@ const Header = ()=>{
                                     children: t('nav.prices')
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 56,
+                                    lineNumber: 64,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 55,
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -32576,7 +32614,7 @@ const Header = ()=>{
                                         children: t('language_switcher.en')
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 59,
+                                        lineNumber: 67,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -32584,7 +32622,7 @@ const Header = ()=>{
                                         children: "/"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 62,
+                                        lineNumber: 70,
                                         columnNumber: 52
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -32596,13 +32634,13 @@ const Header = ()=>{
                                         children: t('language_switcher.de')
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 62,
+                                        lineNumber: 70,
                                         columnNumber: 88
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 58,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, undefined)
                         ]
@@ -32616,7 +32654,7 @@ const Header = ()=>{
                         onClick: toggleMenu
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 69,
+                        lineNumber: 77,
                         columnNumber: 24
                     }, undefined)
                 ]
