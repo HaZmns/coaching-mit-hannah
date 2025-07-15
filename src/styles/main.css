@@ -177,7 +177,7 @@ header {
 }
 
 /* Add a subtle line between menu items */
-.nav-links li:not(:last-child) {
+.nav-links li:not(:last-child):not(.menu-close-button) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   padding-bottom: 3px;
 }
@@ -513,13 +513,25 @@ footer {
   }
   
   .nav-links {
-    margin-top: 20px;
+    margin-top: 0;
     flex-direction: column;
   }
   
   .nav-links li {
     margin-left: 0;
     margin-bottom: 10px;
+  }
+
+  /* Ensure burger menu positioning works on mobile */
+  .burger-menu.open {
+    left: 15px;
+    top: 15px;
+  }
+
+  /* Ensure close button positioning works on mobile */
+  .menu-close-button {
+    top: 15px;
+    left: 15px;
   }
 
   .hero h1 {
@@ -557,6 +569,18 @@ footer {
     padding: calc(var(--header-vertical-spacing) / 2) 0; /* Further reduced for very small screens */
   }
   
+  /* Ensure burger menu positioning works on very small screens */
+  .burger-menu.open {
+    left: 10px;
+    top: 10px;
+  }
+
+  /* Ensure close button positioning works on very small screens */
+  .menu-close-button {
+    top: 10px;
+    left: 10px;
+  }
+  
   .footer-content {
     justify-content: space-between;
   }
@@ -592,12 +616,35 @@ footer {
 
 /* When menu is open, adjust the burger position */
 .burger-menu.open {
-  position: fixed;
-  right: 20px;
+  position: absolute;
+  left: 0px;
   top: 20px;
   z-index: 102;
   margin: 0; /* Reset all margins when open */
   /* No need for margin-bottom here as it's reset */
+}
+
+/* Close button inside the menu */
+.menu-close-button {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 102;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  border-bottom: none !important;
+}
+
+.menu-close-button .burger-menu {
+  position: static;
+  margin: 0;
+  cursor: pointer;
+}
+
+.menu-close-button .burger-bar {
+  background-color: var(--blue);
 }
 
 /* Transforms burger into X when opened - adjusted for 20% smaller size */

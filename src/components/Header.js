@@ -40,6 +40,14 @@ const Header = () => {
           </div>
           
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+            {/* Close button positioned at the top of the menu */}
+            <li className="menu-close-button">
+              <div className="burger-menu close-menu" onClick={toggleMenu}>
+                <div className="burger-bar open"></div>
+                <div className="burger-bar open"></div>
+                <div className="burger-bar open"></div>
+              </div>
+            </li>
             <li>
               <Link to="/coaching" onClick={toggleMenu}>{t('nav.coaching')}</Link>
             </li>
