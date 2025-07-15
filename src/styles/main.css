@@ -44,10 +44,13 @@ p, li, a:not(.btn), span, blockquote, .text-body {
 h1, h2, h3, h4, h5, h6, 
 .section-title, 
 .btn, 
-.nav-links a, 
 .nav-links button,
 .language-row button {
   font-family: var(--font-heading);
+}
+
+.nav-links a {
+  font-family: var(--font-heading) !important;
 }
 
 /* Set general lighter weights for all headings */
@@ -144,7 +147,7 @@ header {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  padding: 70px 0 20px;
+  padding: 40px 0 40px;
   transition: 0.5s;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   z-index: 100;
@@ -634,16 +637,20 @@ footer {
 }
 
 .language-row button {
-  width: auto;
-  text-align: center;
+  width: fit-content !important;
+  text-align: center !important;
   padding: 3px 0;
   margin: 0;
   font-weight: 400;
+  font-family: var(--font-heading) !important;
+  display: inline-block !important;
+  flex-shrink: 0;
 }
 
 .language-row .separator {
-  margin: 0 2px;
+  margin: 0 5px;
   color: var(--blue);
+  padding: 0;
 }
 
 /* Image Section */
