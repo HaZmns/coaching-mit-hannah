@@ -36,8 +36,12 @@ p, li, a:not(.btn), span, blockquote, .text-body {
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6, .section-title, .btn, .nav-links a, .nav-links button, .language-row button {
+h1, h2, h3, h4, h5, h6, .section-title, .btn, .nav-links button, .language-row button {
   font-family: var(--font-heading);
+}
+
+.nav-links a {
+  font-family: var(--font-heading) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,7 +117,7 @@ header {
   flex-direction: column;
   width: 300px;
   height: 85vh;
-  padding: 70px 0 20px;
+  padding: 40px 0;
   list-style: none;
   transition: all .5s;
   display: flex;
@@ -583,16 +587,20 @@ footer {
 }
 
 .language-row button {
-  text-align: center;
-  width: auto;
+  flex-shrink: 0;
   margin: 0;
   padding: 3px 0;
   font-weight: 400;
+  text-align: center !important;
+  width: fit-content !important;
+  font-family: var(--font-heading) !important;
+  display: inline-block !important;
 }
 
 .language-row .separator {
   color: var(--blue);
-  margin: 0 2px;
+  margin: 0 5px;
+  padding: 0;
 }
 
 .image-section {
