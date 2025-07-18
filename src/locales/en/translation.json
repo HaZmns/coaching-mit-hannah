@@ -17,9 +17,13 @@
   "coaching": {
     "hero_title": "Coaching",
     "hero_subtitle": "What can you expect?",
-    "description": "In my coaching sessions I support you in finding clarity and structure in your toughts and to grow in phases of development - whether in your professional, private or in between. You don't need to have a clear goal. It's enough if you notice: I want something to change.",
+    "description": "In my coaching sessions I support you in finding clarity and structure in your toughts and to grow in phases of development - whether professional, private or in between. You don't need to have a clear goal, it's enough if you notice: I want something to change.",
     "second_subtitle": "Common Coaching Topics",
-    "topic_list": "Professional (Re-) Orientation"
+    "topic1": "professional (re-) orientation",
+    "topic2": "conflicts in private or work life",
+    "topic3": "dealing with uncertainty & self-doubt",
+    "topic4": "decision-making situations",
+    "topic5": "personal change processes & desires"
   },
   "about": {
     "hero_title": "About Me",
@@ -38,13 +42,17 @@
   },
   "contact": {
     "title": "Contact Me",
-    "description": "Get in touch for more information or to schedule a session",
+    "description": "Get in touch for more information or to schedule a session...",
     "name_label": "Name",
     "email_label": "Email",
     "message_label": "Message",
     "submit_button": "SEND MESSAGE",
     "success_message": "Your message has been sent successfully! I'll get back to you soon.",
-    "error_message": "There was an error sending your message. Please try again."
+    "error_message": "There was an error sending your message. Please try again.",
+    "email_label_contact": "Email",
+    "phone_label": "Phone",
+    "email_address": "hannah.ziemons@posteo.de",
+    "phone_number": "+49 15782580405"
   },
   "prices": {
     "title": "Pricing",
@@ -54,7 +62,7 @@
     "package1_description": "One 60-minute coaching session",
     "package3_title": "First Try-Out Seesion",
     "package3_price": "0€",
-    "package3_description": "One 60-minute session to get to know each other and clarify your coaching goal(s)",
+    "package3_description": "One 60-minute session to get to know each other and clarify your coaching goal(s)"
   },
   "impressum": {
     "title": "Impressum",

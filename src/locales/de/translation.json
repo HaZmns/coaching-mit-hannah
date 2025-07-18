@@ -20,7 +20,11 @@
     "hero_subtitle": "Was heißt das eigentlich?",
     "description": "In meinem systemischen Coaching geht es darum Veränderungen anzustoßen und Menschen in Phasen der Weiterentwicklung zu unterstützen – sei es beruflich, privat oder irgendwo dazwischen. Du musst kein fertiges Ziel haben. Es reicht, wenn du merkst: Ich will, dass sich etwas ändert.",
     "second_subtitle": "Häufige Coaching-Themen",
-    "topic_list": "Berufliche (Neu-) Orientierung", 
+    "topic1": "berufliche (Neu-) Orientierung",
+    "topic2": "Konflikte im Privat- oder Arbeitsleben",
+    "topic3": "Umgang mit Unsicherheit & Selbstzweifeln",
+    "topic4": "Eintscheidungssituationen",
+    "topic5": "persönliche Veränderungsprozesse & -wünsche" ,
     "feature1_title": "Berufliche (Neu-) Orientierung",
     "feature1_description": "Ob wir mit unserem Arbeitsleben zufrieden sind oder nicht, wirkt sich schnell auf alle anderen Lebensbereiche aus. Umso mehr kann es sich lohnen, sich bewusst damit auseinanderzusetzen",
     "feature2_title": "Beziehungen und Konflikte",
@@ -64,7 +68,11 @@
     "message_label": "Nachricht",
     "submit_button": "NACHRICHT SENDEN",
     "success_message": "Deine Nachricht wurde erfolgreich gesendet! Ich werde mich in Kürze bei dir melden.",
-    "error_message": "Beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es erneut."
+    "error_message": "Beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+    "email_label_contact": "Email",
+    "phone_label": "Telefon",
+    "email_address": "hannah.ziemons@posteo.de",
+    "phone_number": "+49 15782580405"
   },
   "prices": {
     "title": "Preise",

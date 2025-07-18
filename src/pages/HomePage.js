@@ -82,11 +82,11 @@ const HomePage = () => {
               margin: '15px 0 25px',
               lineHeight: '1.7'
             }}>
-              <li>berufliche (Neu-) Orientierung</li>
-              <li>Konflikte im Privat- oder Arbeitsleben</li>
-              <li>Umgang mit Unsicherheit & Selbstzweifeln</li>
-              <li>Eintscheidungssituationen</li>
-              <li>persönliche Veränderungsprozesse & -wünsche</li>
+              <li>{t('coaching.topic1')}</li>
+              <li>{t('coaching.topic2')}</li>
+              <li>{t('coaching.topic3')}</li>
+              <li>{t('coaching.topic4')}</li>
+              <li>{t('coaching.topic5')}</li>
             </ul>
           </div>
         </div>
@@ -117,16 +117,16 @@ const HomePage = () => {
           }}>
             <div style={{ flex: '1', minWidth: '300px', textAlign: 'left' }}>
               <div className="contact-section">
-                <h3>Email</h3>
+                <h3>{t('contact.email_label_contact')}</h3>
                 <p>
-                  hannah.ziemons@posteo.de
+                  {t('contact.email_address')}
                 </p>
               </div>
               
               <div className="contact-section">
-                <h3>Telefon</h3>
+                <h3>{t('contact.phone_label')}</h3>
                 <p>
-                  +49 15782580405
+                  {t('contact.phone_number')}
                 </p>
               </div>
               
