@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build --public-url ./ && node copy-public.js",
+    "build": "parcel build --public-url ./ --no-source-maps && node copy-public.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
