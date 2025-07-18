@@ -20,10 +20,10 @@ const CoachingPage = () => {
                 <p>{t('coaching.feature1_description')}</p>
                 <div style={{ backgroundColor: 'var(--gray)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
                   <ul style={{ paddingLeft: '20px' }}>
-                    <li>Wo möchte ich meine berufliche Laufbahn starten?</li>
-                    <li>Wie kann ich gelassener mit beruflichen Konflikten umgehen?</li>
-                    <li>Ist jetzt die richtige Zeit für einen Job-Wechsel?</li>
-                    <li>Wie schaffe ich den Einstieg in eine neue Branche?</li>
+                    <li>{t('coaching.feature1_item1')}</li>
+                    <li>{t('coaching.feature1_item2')}</li>
+                    <li>{t('coaching.feature1_item3')}</li>
+                    <li>{t('coaching.feature1_item4')}</li>
                   </ul>
                 </div>
               </div>
@@ -35,10 +35,10 @@ const CoachingPage = () => {
                 <p>{t('coaching.feature2_description')}</p>
                 <div style={{ backgroundColor: 'var(--gray)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
                   <ul style={{ paddingLeft: '20px' }}>
-                    <li>Career path planning</li>
-                    <li>Job search strategy</li>
-                    <li>Interview preparation</li>
-                    <li>Leadership development</li>
+                    <li>{t('coaching.feature2_item1')}</li>
+                    <li>{t('coaching.feature2_item2')}</li>
+                    <li>{t('coaching.feature2_item3')}</li>
+                    <li>{t('coaching.feature2_item4')}</li>
                   </ul>
                 </div>
               </div>
@@ -50,10 +50,10 @@ const CoachingPage = () => {
                 <p>{t('coaching.feature3_description')}</p>
                 <div style={{ backgroundColor: 'var(--gray)', padding: '15px', marginTop: '15px', borderRadius: '4px' }}>
                   <ul style={{ paddingLeft: '20px' }}>
-                    <li>Stress management</li>
-                    <li>Time management techniques</li>
-                    <li>Work-life integration</li>
-                    <li>Prioritization strategies</li>
+                    <li>{t('coaching.feature3_item1')}</li>
+                    <li>{t('coaching.feature3_item2')}</li>
+                    <li>{t('coaching.feature3_item3')}</li>
+                    <li>{t('coaching.feature3_item4')}</li>
                   </ul>
                 </div>
               </div>
@@ -64,10 +64,10 @@ const CoachingPage = () => {
 
       <section className="section" style={{ backgroundColor: 'var(--gray)' }}>
         <div className="container">
-          <h2 className="section-title">Mein Ansatz</h2>
+          <h2 className="section-title">{t('coaching.approach_title')}</h2>
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <p style={{ marginBottom: '30px' }}>
-              Mein Herangehen beim Coaching basiert auf systemischen und personenzentrierten Komponenten, sowie meiner persönlichen Erfahrung. Das wichtigste dabei ist, dass du einen sicheren und motivierenden Raum hast, dein Anliegen zu erforschen und Herausforderungen zu begnen, frei von Bewertungen und Ratschlägen. Auch wenn ich es spannend finde, mich ständig weiterzubilden und dir gerne verschiedene Tools anbieten, steht am Ende im Mittelpunkt, dass du selbst entscheidest, wie du deine Zeile erreichst.
+              {t('coaching.approach_description')}
             </p>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
             </div>
