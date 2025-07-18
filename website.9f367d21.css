@@ -349,13 +349,13 @@ p.description {
 .card p {
   font-family: var(--font-body);
   color: #666;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
 }
 
 .card .card-content ul li {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
