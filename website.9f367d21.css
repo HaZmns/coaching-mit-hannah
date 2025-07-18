@@ -323,6 +323,21 @@ p.description {
   display: grid;
 }
 
+.prices-grid {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.prices-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 380px;
+}
+
 .card {
   background-color: var(--white);
   border-radius: 8px;
@@ -462,6 +477,14 @@ footer {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+
+  .prices-grid {
+    gap: 30px;
+  }
+
+  .prices-card {
+    min-width: 300px;
   }
 }
 
