@@ -55,7 +55,15 @@
     "value2": "Authenzität",
     "value3": "Begeisterung",
     "value4": "Neugier",
-    "bio": "Gutes Coaching lebt in meinen Augen vor allem von der Motivation beider Seiten gemeinsam an einem Thema zu arbeiten. Ob das gut klappt hängt dabei wohl genauso viel von meiner Kompetenz, als von unseren gemeinsamen Werten ab. Hier also ein kleiner Auszug aus Dingen die mir wichtig sind..."
+    "bio": "Gutes Coaching lebt in meinen Augen vor allem von der Motivation beider Seiten gemeinsam an einem Thema zu arbeiten. Ob das gut klappt hängt dabei wohl genauso viel von meiner Kompetenz, als von unseren gemeinsamen Werten ab. Hier also ein kleiner Auszug aus Dingen die mir wichtig sind...",
+    "name": "Hannah Ziemons",
+    "title": "Systemische Coach",
+    "interests_title": "Meine Interessen",
+    "interests_description": "Werte klingen immer gut.. aber auch abstrakt. Um das Bild deiner möglichen (zukünftigen) Coach ein kleines bisschen mehr auszumalen, hier eine kleine Auswahl, der Dinge die mich - neben dem Coaching - einnehmen und faszinieren.",
+    "interest1": "Selbstgemachte Pasta",
+    "interest2": "Berge & Natur",
+    "interest3": "Gute Bücher & Podcasts",
+    "interest4": "Neue Sprachen"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
@@ -100,6 +108,20 @@
     "package3_title": "Folge-Sitzungen (60)",
     "package3_price": "50 €",
     "package3_description": "Deine Möglichkeit basierend auf den bisheringen Erkenntnissen mehr in die Tiefe zu gehen.",
+    "package1_feature1": "Gemeinsames Verständnis für deine Themen & Ziele",
+    "package1_feature2": "Klärung möglicher Fragen",
+    "package1_feature3": "Klarheit über Erwartungshaltung",
+    "package1_feature4": "Terminierung eines möglichen Erst-Gesprächs",
+    "package2_feature1": "Definition deines Coaching-Anliegens",
+    "package2_feature2": "Verständnis für die relevanten System-Komponenten",
+    "package2_feature3": "Entwicklung & Erprobung erster Lösungsansätze",
+    "package2_feature4": "Festhalten der nächsten Schritte",
+    "package3_feature1": "Reflexion bisheriger Schritte",
+    "package3_feature2": "Vertiefung und Festigung neuer Erkenntnisse",
+    "package3_feature3": "Zeit andere Tools anzuwenden",
+    "package3_feature4": "Erweiterung um langfristigere (Coaching-) Ziele",
+    "other_format_title": "Suchst du nach einem anderen Format?",
+    "other_format_description": "Falls du Coaching-Bedarf hast, der sich von den oben beschrieben Optionen unterscheidet, kontaktiere mich gerne und wir können schauen, ob wir eine passende Lösung finden.",
     "note": "Wenn es Gründe gibt, aus denen diese Preise für dich aktuell nicht bezahlbar sind, können wir das gerne gemeinsam besprechen und eine Lösung finden."
   },
   "impressum": {

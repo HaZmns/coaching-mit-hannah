@@ -95,54 +95,47 @@ const PricesPage = () => {
             {t('prices.description')}
           </p>
 
-          <div style={{ 
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '30px',
-            maxWidth: '1200px',
-            margin: '0 auto',
-            justifyContent: 'center'
-          }}>
-            <div style={{ flex: '1', minWidth: '300px', maxWidth: '350px' }}>
+          <div className="prices-grid">
+            <div className="prices-card">
               <PriceCard
                 title={t('prices.package1_title')}
                 price={t('prices.package1_price')}
                 description={t('prices.package1_description')}
                 features={[
-                  'Gemeinsames Verständnis für deine Themen & Ziele',
-                  'Klärung möglicher Fragen',
-                  'Klarheit über Erwartungshaltung',
-                  'Terminierung eines möglichen Erst-Gesprächs'
+                  t('prices.package1_feature1'),
+                  t('prices.package1_feature2'),
+                  t('prices.package1_feature3'),
+                  t('prices.package1_feature4')
                 ]}
                 isPopular={false}
               />
             </div>
 
-            <div style={{ flex: '1', minWidth: '300px', maxWidth: '350px' }}>
+            <div className="prices-card">
               <PriceCard
                 title={t('prices.package2_title')}
                 price={t('prices.package2_price')}
                 description={t('prices.package2_description')}
                 features={[
-                  'Definition deines Coaching-Anliegens',
-                  'Verständnis für die relevanten System-Komponenten',
-                  'Entwicklung & Erprobung erster Lösungsansätze',
-                  'Festhalten der nächsten Schritte'
+                  t('prices.package2_feature1'),
+                  t('prices.package2_feature2'),
+                  t('prices.package2_feature3'),
+                  t('prices.package2_feature4')
                 ]}
                 isPopular={true}
               />
             </div>
 
-            <div style={{ flex: '1', minWidth: '300px', maxWidth: '350px' }}>
+            <div className="prices-card">
               <PriceCard
                 title={t('prices.package3_title')}
                 price={t('prices.package3_price')}
                 description={t('prices.package3_description')}
                 features={[
-                  'Reflexion bisheriger Schritte',
-                  'Vertiefung und Festigung neuer Erkenntnisse',
-                  'Zeit andere Tools anzuwenden',
-                  'Erweiterung um langfristigere (Coaching-) Ziele'
+                  t('prices.package3_feature1'),
+                  t('prices.package3_feature2'),
+                  t('prices.package3_feature3'),
+                  t('prices.package3_feature4')
                 ]}
                 isPopular={false}
               />
@@ -157,9 +150,9 @@ const PricesPage = () => {
             borderRadius: '8px',
             textAlign: 'center'
           }}>
-            <h3 style={{ marginBottom: '15px' }}>Suchst du nach einem anderen Format?</h3>
+            <h3 style={{ marginBottom: '15px' }}>{t('prices.other_format_title')}</h3>
             <p style={{ marginBottom: '20px' }}>
-              Falls du Coaching-Bedarf hast, der sich von den oben beschrieben Optionen unterscheidet, kontaktiere mich gerne und wir können schauen, ob wir eine passende Lösung finden.
+              {t('prices.other_format_description')}
             </p>
             <Link to="/contact" className="btn" style={{ backgroundColor: 'var(--pistachio)' }}>
               {t('contact.title')}

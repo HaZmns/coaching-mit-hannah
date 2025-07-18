@@ -44,8 +44,8 @@ const AboutPage = () => {
                   }}
                 />
               </div>
-              <h3 style={{ marginBottom: '10px' }}>Hannah Ziemons</h3>
-              <p>Systemische Coach</p>
+              <h3 style={{ marginBottom: '10px' }}>{t('about.name')}</h3>
+              <p>{t('about.title')}</p>
             </div>
 
             <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
@@ -110,9 +110,9 @@ const AboutPage = () => {
         <div className="container">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'center', marginBottom: '40px' }}>
             <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-              <h3>Meine Interessen</h3>
+              <h3>{t('about.interests_title')}</h3>
               <p style={{ marginBottom: '20px' }}>
-                Werte klingen immer gut.. aber auch abstrakt. Um das Bild deiner möglichen (zukünftigen) Coach ein kleines bisschen mehr auszumalen, hier eine kleine Auswahl, der Dinge die mich - neben dem Coaching - einnehmen und faszinieren.
+                {t('about.interests_description')}
               </p>
               <div style={{ 
                 display: 'flex', 
@@ -128,7 +128,7 @@ const AboutPage = () => {
                   borderRadius: '8px',
                   textAlign: 'center'
                 }}>
-                  <h4>Selbstgemachte Pasta</h4>
+                  <h4>{t('about.interest1')}</h4>
                 </div>
                 <div style={{ 
                   flex: '1',
@@ -138,7 +138,7 @@ const AboutPage = () => {
                   borderRadius: '8px',
                   textAlign: 'center'
                 }}>
-                  <h4>Berge & Natur</h4>
+                  <h4>{t('about.interest2')}</h4>
                 </div>
                 <div style={{ 
                   flex: '1',
@@ -148,7 +148,7 @@ const AboutPage = () => {
                   borderRadius: '8px',
                   textAlign: 'center'
                 }}>
-                  <h4>Gute Bücher & Podcasts</h4>
+                  <h4>{t('about.interest3')}</h4>
                 </div>
                 <div style={{ 
                   flex: '1',
@@ -158,7 +158,7 @@ const AboutPage = () => {
                   borderRadius: '8px',
                   textAlign: 'center'
                 }}>
-                  <h4>Neue Sprachen</h4>
+                  <h4>{t('about.interest4')}</h4>
                 </div>
               </div>
             </div>
