@@ -768,6 +768,7 @@ footer {
 .language-row {
   display: flex;
   align-items: center;
+  padding-left: 130px !important;
 }
 
 .language-row button {
