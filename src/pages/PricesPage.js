@@ -13,7 +13,7 @@ const PriceCard = ({ title, price, description, features, isPopular }) => {
       boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
       transition: 'transform 0.3s ease, box-shadow 0.3s ease',
       position: 'relative',
-      transform: isPopular ? 'scale(1.05)' : 'scale(1)',
+      transform: isPopular ? 'scale(1.02)' : 'scale(1)',
       zIndex: isPopular ? 2 : 1
     }}>
       {/* {isPopular && (
@@ -32,36 +32,46 @@ const PriceCard = ({ title, price, description, features, isPopular }) => {
         </div>
       )} */}
       <div style={{
-        padding: '30px',
+        padding: '20px',
         backgroundColor: isPopular ? 'var(--pistachio-light)' : 'var(--white)',
         textAlign: 'center'
       }}>
         <h3 style={{ marginBottom: '15px' }}>{title}</h3>
         <div style={{ 
-          fontSize: '36px', 
+          fontSize: '32px', 
           fontWeight: 'bold',
-          marginBottom: '15px'
+          marginBottom: '10px'
         }}>
           {price}
         </div>
-        <p style={{ marginBottom: '20px' }}>{description}</p>
+        <p style={{ 
+          marginBottom: '15px',
+          fontSize: '14px',
+          lineHeight: '1.4',
+          color: '#666'
+        }}>{description}</p>
       </div>
-      <div style={{ padding: '20px 30px 30px' }}>
+      <div style={{ padding: '15px 20px 20px' }}>
         <ul style={{ 
           listStyle: 'none',
-          marginBottom: '30px'
+          marginBottom: '20px'
         }}>
           {features.map((feature, index) => (
             <li key={index} style={{ 
-              marginBottom: '10px',
-              paddingLeft: '20px',
-              position: 'relative'
+              marginBottom: '8px',
+              paddingLeft: '15px',
+              position: 'relative',
+              fontSize: '14px',
+              lineHeight: '1.4',
+              fontFamily: 'var(--font-body)',
+              fontWeight: '300'
             }}>
               <span style={{
                 position: 'absolute',
                 left: '0',
                 color: 'var(--pistachio)',
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                fontSize: '14px'
               }}>✓</span> {feature}
             </li>
           ))}
@@ -143,15 +153,15 @@ const PricesPage = () => {
           </div>
 
           <div style={{ 
-            maxWidth: '800px', 
-            margin: '50px auto 0',
+            maxWidth: '700px', 
+            margin: '90px auto 0',
             backgroundColor: 'var(--pistachio-very-light)',
-            padding: '30px',
+            padding: '20px',
             borderRadius: '8px',
             textAlign: 'center'
           }}>
             <h3 style={{ marginBottom: '15px' }}>{t('prices.other_format_title')}</h3>
-            <p style={{ marginBottom: '20px' }}>
+            <p style={{ marginBottom: '15px', marginRight: '20px', marginLeft: '20px'}}>
               {t('prices.other_format_description')}
             </p>
             <Link to="/contact" className="btn" style={{ backgroundColor: 'var(--pistachio)' }}>
@@ -161,7 +171,7 @@ const PricesPage = () => {
 
           <div style={{ 
             maxWidth: '800px', 
-            margin: '30px auto 0',
+            margin: '80px auto 0',
             textAlign: 'center',
             fontSize: '14px',
             color: '#666'
