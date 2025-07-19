@@ -326,7 +326,7 @@ p.description {
 .prices-grid {
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -334,8 +334,8 @@ p.description {
 
 .prices-card {
   flex: 1;
-  min-width: 280px;
-  max-width: 380px;
+  min-width: 250px;
+  max-width: 350px;
 }
 
 .card {
@@ -364,14 +364,34 @@ p.description {
 .card p {
   font-family: var(--font-body);
   color: #666;
-  font-size: 14px;
   font-weight: 300;
   line-height: 1.6;
+  font-size: 16px !important;
 }
 
 .card .card-content ul li {
   font-size: 14px;
   line-height: 1.5;
+}
+
+.prices-card ul li {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  font-family: var(--font-body) !important;
+  font-weight: 300 !important;
+}
+
+.prices-card p {
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+  font-family: var(--font-body) !important;
+  font-weight: 300 !important;
+}
+
+form label {
+  font-family: var(--font-heading) !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
 }
 
 footer {
@@ -480,7 +500,17 @@ footer {
   }
 
   .prices-grid {
-    gap: 30px;
+    gap: 20px;
+  }
+
+  .prices-card {
+    min-width: 280px;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .prices-grid {
+    gap: 25px;
   }
 
   .prices-card {
